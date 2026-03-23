@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pitchSap - Elite Consulting Network</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="javascript:void(0)" class="logo">pitchSap<span class="dot">.</span></a>
+            <div class="nav-links">
+                <a href="javascript:void(0)" onclick="document.querySelector('#how-it-works').scrollIntoView({behavior:'smooth'})">How It Works</a>
+                <a href="javascript:void(0)" onclick="document.querySelector('#benefits').scrollIntoView({behavior:'smooth'})">Benefits</a>
+                <a href="javascript:void(0)" onclick="document.querySelector('#consultants').scrollIntoView({behavior:'smooth'})">Consultants</a>
+                <a href="javascript:void(0)" onclick="document.querySelector('#blogs').scrollIntoView({behavior:'smooth'})">Blogs</a>
+                <a href="javascript:void(0)" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Contact Us</a>
+            </div>
+            <div class="nav-actions">
+                <button type="button" id="auth-btn" class="btn btn-primary">Login / Signup</button>
+                <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <a href="javascript:void(0)" onclick="document.querySelector('#how-it-works').scrollIntoView({behavior:'smooth'})">How It Works</a>
+        <a href="javascript:void(0)" onclick="document.querySelector('#benefits').scrollIntoView({behavior:'smooth'})">Benefits</a>
+        <a href="javascript:void(0)" onclick="document.querySelector('#consultants').scrollIntoView({behavior:'smooth'})">Consultants</a>
+        <a href="javascript:void(0)" onclick="document.querySelector('#blogs').scrollIntoView({behavior:'smooth'})">Blogs</a>
+        <a href="javascript:void(0)" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Contact Us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">Elevate your business strategy</div>
+            <h1>The Elite Network of <br><span class="gradient-text">On-Demand Consultants</span></h1>
+            <p>pitchSap bridges the gap between visionary companies and world-class experts. Gain immediate access to top-tier consultants from Fortune 500 backgrounds without traditional agency overhead.</p>
+            <div class="hero-buttons">
+                <button type="button" class="btn btn-primary btn-large">Find an Expert</button>
+                <button type="button" class="btn btn-secondary btn-large">Our Process <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glass-card main-card">
+                <div class="card-header">
+                    <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                </div>
+                <div class="card-body">
+                    <div class="mock-graph">
+                        <div class="bar h-40"></div>
+                        <div class="bar h-60"></div>
+                        <div class="bar h-30"></div>
+                        <div class="bar h-80"></div>
+                        <div class="bar h-100"></div>
+                    </div>
+                    <div class="mock-text">Revenue Growth with pitchSap Analysis</div>
+                    <div class="mock-line"></div>
+                    <div class="mock-line short"></div>
+                </div>
+            </div>
+            <div class="glass-card floating-card">
+                <div class="user-avatar" style="background: url('https://i.pravatar.cc/150?img=47') center/cover;"></div>
+                <div class="user-info">
+                    <div class="name">Sarah Jenkins</div>
+                    <div class="role">Ex-McKinsey Strategy Lead</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">How pitchSap Works</h2>
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fas fa-search"></i></div>
+                    <h3>1. Define Your Need</h3>
+                    <p>Post your project brief or schedule a free advisory call. Our smart algorithm matches your specific requirements with the top 1% of vetted industry experts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fas fa-handshake"></i></div>
+                    <h3>2. Interview & Select</h3>
+                    <p>Review customized proposals and interview shortlisted consultants directly on our platform. Choose the expert that perfectly aligns with your company culture and goals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fas fa-rocket"></i></div>
+                    <h3>3. Execute & Scale</h3>
+                    <p>Kick off the project seamlessly with integrated milestone tracking and secure payments. Achieve measurable results faster and more efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section">
+        <div class="container">
+            <h2 class="section-title">Why Leading Companies Choose pitchSap</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="benefit-text">
+                        <h4>Rigorously Vetted Talent</h4>
+                        <p>Less than 3% of applicants pass our technical and behavioral screening process. You only work with the absolute best.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="benefit-text">
+                        <h4>Agile Deployment</h4>
+                        <p>Skip the weeks of agency bureaucracy. Hire and onboard an expert in as little as 48 hours for immediate impact.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="benefit-text">
+                        <h4>Cost Transparency</h4>
+                        <p>No hidden fees or retaining overhead. Pay clearly defined rates per hour or per project milestone, maximizing your ROI.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="benefit-text">
+                        <h4>Enterprise-Grade Security</h4>
+                        <p>Your intellectual property is protected by strict NDAs, secure communication, and encrypted data rooms on the platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultants Section -->
+    <section id="consultants" class="section bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Meet Our Top Experts</h2>
+            <div class="grid-3">
+                <div class="consultant-card">
+                    <div class="consultant-img" style="background: url('https://i.pravatar.cc/300?img=11') center/cover;"></div>
+                    <div class="consultant-info">
+                        <h3>David Chen</h3>
+                        <p class="role">Digital Transformation</p>
+                        <p class="bio">Former CTO with 15+ years experience guiding legacy companies through full-scale cloud migrations.</p>
+                        <button type="button" class="btn btn-secondary btn-block">View Profile</button>
+                    </div>
+                </div>
+                <div class="consultant-card">
+                    <div class="consultant-img" style="background: url('https://i.pravatar.cc/300?img=5') center/cover;"></div>
+                    <div class="consultant-info">
+                        <h3>Elena Rodriguez</h3>
+                        <p class="role">Financial Restructuring</p>
+                        <p class="bio">Ex-Bain partner specializing in M&A strategy, financial due diligence, and capital optimization.</p>
+                        <button type="button" class="btn btn-secondary btn-block">View Profile</button>
+                    </div>
+                </div>
+                <div class="consultant-card">
+                    <div class="consultant-img" style="background: url('https://i.pravatar.cc/300?img=12') center/cover;"></div>
+                    <div class="consultant-info">
+                        <h3>Marcus Johnson</h3>
+                        <p class="role">Growth Marketing</p>
+                        <p class="bio">Helped scale 3 unicorn startups. Expert in acquisition strategies, LTV maximization, and brand positioning.</p>
+                        <button type="button" class="btn btn-secondary btn-block">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="section">
+        <div class="container">
+            <h2 class="section-title">Latest Insights</h2>
+            <div class="grid-3">
+                <div class="blog-card">
+                    <div class="blog-img bg-gradient-1"></div>
+                    <div class="blog-body">
+                        <span class="blog-date">March 12, 2026</span>
+                        <h3>The Future of Agile Consulting in 2026</h3>
+                        <p>How on-demand experts are replacing traditional monolithic agencies in the age of AI...</p>
+                        <a href="javascript:void(0)" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img bg-gradient-2"></div>
+                    <div class="blog-body">
+                        <span class="blog-date">February 28, 2026</span>
+                        <h3>Optimizing Operational Costs Post-Series B</h3>
+                        <p>Key strategies to extend runway without sacrificing product development momentum...</p>
+                        <a href="javascript:void(0)" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img bg-gradient-3"></div>
+                    <div class="blog-body">
+                        <span class="blog-date">February 15, 2026</span>
+                        <h3>Navigating M&A Due Diligence</h3>
+                        <p>A comprehensive checklist prepared by our top financial restructuring consultants...</p>
+                        <a href="javascript:void(0)" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="javascript:void(0)" class="logo text-white">pitchSap<span class="dot">.</span></a>
+                    <p>The premier platform connecting visionary companies with elite, on-demand consultants globally.</p>
+                    <div class="social-links">
+                        <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="javascript:void(0)">About Us</a></li>
+                        <li><a href="javascript:void(0)">Careers</a></li>
+                        <li><a href="javascript:void(0)">Press & Blog</a></li>
+                        <li><a href="javascript:void(0)">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="javascript:void(0)">For Businesses</a></li>
+                        <li><a href="javascript:void(0)">For Consultants</a></li>
+                        <li><a href="javascript:void(0)">Pricing</a></li>
+                        <li><a href="javascript:void(0)">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest insights and consulting trends delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 pitchSap. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="javascript:void(0)">Privacy Policy</a>
+                    <a href="javascript:void(0)">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login/Signup Modal -->
+    <div id="auth-modal" class="modal-overlay">
+        <div class="modal">
+            <button type="button" class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h2>Welcome to pitchSap</h2>
+                <p>Log in to access your dashboard and connect with consultants.</p>
+            </div>
+            <form id="login-form">
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" required placeholder="you@company.com">
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                <div class="form-footer">
+                    <span>Don't have an account? <a href="javascript:void(0)">Create Account</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Smart Chat Widget -->
+    <div id="chat-container" class="chat-container hidden">
+        <div id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+            <span class="notification-badge" id="chat-badge" style="display: none;">1</span>
+        </div>
+        
+        <div id="chat-window" class="chat-window">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <div class="status-dot"></div>
+                    pitchSap AI Assistant
+                </div>
+                <button type="button" id="close-chat" class="icon-btn"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message received">
+                    <div class="msg-content">Welcome back to pitchSap! I'm your AI assistant. You can ask me about consultants, pricing, services, or how the platform works.</div>
+                    <div class="msg-time">Just now</div>
+                </div>
+            </div>
+            <form id="chat-input-form" class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about pricing, experts..." required autocomplete="off">
+                <button type="submit" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
